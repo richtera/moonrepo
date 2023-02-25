@@ -1,10 +1,10 @@
 module.exports = {
-	extends: ['plugin:vue/vue3-recommended', 'moon/browser', 'moon/vue'],
+	extends: ['plugin:vue/vue3-recommended', 'moon/browser'],
 	parser: 'vue-eslint-parser',
 	parserOptions: {
 		extraFileExtensions: ['.vue'],
 		parser: '@typescript-eslint/parser',
-		project: 'tsconfig.app.json',
+		project: ['tsconfig.app.json', 'tsconfig.vitest.json'],
 		tsconfigRootDir: __dirname,
 	},
 	rules: {
