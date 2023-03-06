@@ -18,6 +18,8 @@ tasks:
     outputs:
       - '.cache'
       - 'build'
+    env:
+      NODE_ENV: production
 
   dev:
     command: 'remix dev'
@@ -28,3 +30,5 @@ tasks:
     deps:
       - 'build'
     local: true
+    env:
+      NODE_ENV: production

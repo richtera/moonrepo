@@ -16,6 +16,7 @@
   },
   "include": [
     ".eslintrc.js",
+    "express.js",
     "remix.config.js",
     "remix.env.d.ts",
     "app/**/*"
